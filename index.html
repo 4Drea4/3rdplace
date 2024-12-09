@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3rd Place Event App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <h1>3rd Place</h1>
+            <input type="text" id="search-bar" placeholder="Search events by city..." />
+        </header>
+
+        <main class="event-cards" id="event-cards">
+        </main>
+
+        
+        <nav class="bottom-nav">
+            <button class="nav-button" id="home-btn">Home</button>
+            <button class="nav-button" id="search-btn">Search</button>
+            <button class="nav-button" id="create-event-btn">Create Event</button>
+            <button class="nav-button" id="notifications-btn">Notifications</button>
+            <button class="nav-button" id="profile-btn">Profile</button>
+        </nav>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <h2>Create Event</h2>
+                <form id="event-form">
+                    <label for="event-name">Event Name</label>
+                    <input type="text" id="event-name" required />
+                    <label for="event-city">City</label>
+                    <input type="text" id="event-city" required />
+                    <label for="event-address">Address</label>
+                    <input type="text" id="event-address" required />
+                    <label for="event-date">Date & Time</label>
+                    <input type="datetime-local" id="event-date" required />
+                    <label for="event-image">Image URL</label>
+                    <input type="text" id="event-image" placeholder="https://example.com/image.jpg" />
+                    <button type="submit">Add Event</button>
+                </form>
+                <button id="close-modal">Close</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
